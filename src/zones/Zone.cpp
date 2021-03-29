@@ -308,29 +308,67 @@ void Zone::update(float dt) {
 
 
 
-void Zone::drawEntities(sf::RenderTarget& target, sf::RenderStates states) {
+void Zone::drawEntitiesBelowPlayer(sf::RenderTarget &target, sf::RenderStates states,
+                                   sf::Vector2i characterPos) {
     // Draw Npcs
     std::vector<Npc*>& npcs = m_entityLoader.getNpcs();
     for(Npc* n : npcs){
-        n->draw(target, states);
+        if(n->getPosition().y <= characterPos.y)
+            n->draw(target, states);
     }
-    
+
     // Draw trainers
     std::vector<Trainer*>& trainers = m_entityLoader.getTrainers();
     for(Trainer* t : trainers){
-        t->draw(target, states);
+        if(t->getPosition().y <= characterPos.y)
+            t->draw(target, states);
     }
-    
+
     // Draw PhysicalItems
     std::vector<PhysicalItem*>& items = m_entityLoader.getPhysicalItems();
     for(PhysicalItem* i : items){
-        i->draw(target, states);
+        if(i->getPosition().y <= characterPos.y)
+            i->draw(target, states);
     }
-    
+
     // Draw BoxPCs
     std::vector<BoxPC*>& boxPCs = m_entityLoader.getBoxPCs();
     for(BoxPC* b : boxPCs){
-        b->draw(target, states);
+        if(b->getPosition().y <= characterPos.y)
+            b->draw(target, states);
+    }
+}
+
+
+
+void Zone::drawEntitiesAbovePlayer(sf::RenderTarget &target, sf::RenderStates states,
+                                   sf::Vector2i characterPos) {
+    // Draw Npcs
+    std::vector<Npc*>& npcs = m_entityLoader.getNpcs();
+    for(Npc* n : npcs){
+        if(n->getPosition().y > characterPos.y)
+            n->draw(target, states);
+    }
+
+    // Draw trainers
+    std::vector<Trainer*>& trainers = m_entityLoader.getTrainers();
+    for(Trainer* t : trainers){
+        if(t->getPosition().y > characterPos.y)
+            t->draw(target, states);
+    }
+
+    // Draw PhysicalItems
+    std::vector<PhysicalItem*>& items = m_entityLoader.getPhysicalItems();
+    for(PhysicalItem* i : items){
+        if(i->getPosition().y > characterPos.y)
+            i->draw(target, states);
+    }
+
+    // Draw BoxPCs
+    std::vector<BoxPC*>& boxPCs = m_entityLoader.getBoxPCs();
+    for(BoxPC* b : boxPCs){
+        if(b->getPosition().y > characterPos.y)
+            b->draw(target, states);
     }
 }
 

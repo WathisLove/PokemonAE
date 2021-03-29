@@ -46,7 +46,7 @@ class Zone
 {
 public:
 //===============// Static Methods //===============//
-    
+
     /**
      * Return the name of the zone as a string
      * @param id the id of the zone
@@ -85,12 +85,17 @@ public:
      * Draw the foreground and the foreground decoration
      */
     void drawForeground(sf::RenderTarget& target, sf::RenderStates states) const;
-    
-    
+
+
     /**
-     * Draw all the entities
+     * Draw entities below the player
      */
-    void drawEntities(sf::RenderTarget& target, sf::RenderStates states);
+    void drawEntitiesBelowPlayer(sf::RenderTarget& target, sf::RenderStates states, sf::Vector2i characterPos);
+
+    /**
+     * Dra entities above the player
+     */
+    void drawEntitiesAbovePlayer(sf::RenderTarget& target, sf::RenderStates states, sf::Vector2i characterPos);
     
     
     /**

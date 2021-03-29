@@ -118,9 +118,9 @@ void GameState::draw() {
     m_zone.drawBackground(window, sf::RenderStates::Default);
 
     // Draw the Entities and the player
+    m_zone.drawEntitiesBelowPlayer(window, sf::RenderStates::Default, m_character.getPosition());
     window.draw(m_character);
-
-    m_zone.drawEntities(window, sf::RenderStates::Default);
+    m_zone.drawEntitiesAbovePlayer(window, sf::RenderStates::Default, m_character.getPosition());
 
     // Draw the foreground
     m_zone.drawForeground(window, sf::RenderStates::Default);
