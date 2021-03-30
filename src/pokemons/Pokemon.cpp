@@ -213,11 +213,11 @@ int Pokemon::getInFightStat(StatName stat) const{
     
     
     // Paralysis reduce the speed
-    if(stat == StatName::speed && m_mainStatus.getName() == Paralysis)
+    if(stat == StatName::speed && m_mainStatus.getName() == MainStatusName::Paralysis)
         statusCoef = 0.5;
     
     // Burn reduce the attack
-    if(stat == StatName::attack && m_mainStatus.getName() == Burn)
+    if(stat == StatName::attack && m_mainStatus.getName() == MainStatusName::Burn)
         statusCoef = 0.5;
     
     // Apply the item effect

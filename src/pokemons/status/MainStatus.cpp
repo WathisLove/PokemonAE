@@ -134,9 +134,9 @@ std::string MainStatus::toString() const {
 
 
 float MainStatus::getCaptureBonus() {
-    if(m_name == Sleep || m_name == Freeze)
+    if(m_name == MainStatusName::Sleep || m_name == MainStatusName::Freeze)
         return 2.;
-    else if(m_name == NoMainStatus)
+    else if(m_name == MainStatusName::NoMainStatus)
         return 1.;
     else
         return 1.5;

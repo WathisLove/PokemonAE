@@ -1662,11 +1662,11 @@ void FightState2::checkKOs() {
 
 MainStatusName FightState2::getNewStatus(Pokemon * defender, Attack* attack) {
     if(defender->hasStatus())
-        return NoMainStatus;
+        return MainStatusName::NoMainStatus;
         
     float coeff = m_turnContext.lastAttackEfficiency;
     if(coeff == 0)
-        return NoMainStatus;
+        return MainStatusName::NoMainStatus;
     
     // Try to burn
     if(attack->canBurn() && attack->getBurnChance() > randomFloat(0, 1))
@@ -1681,7 +1681,7 @@ MainStatusName FightState2::getNewStatus(Pokemon * defender, Attack* attack) {
     if(attack->canParalyse() && attack->getParalyseChance() > randomFloat(0, 1)){
         // Can't paralyse if it's an electirc pokemon
         if(defender->getType().getFirstType() == Type::Electric || defender->getType().getSecondType() == Type::Electric)
-            return NoMainStatus;
+            return MainStatusName::NoMainStatus;
         else
             return MainStatusName::Paralysis;
     }
@@ -1693,7 +1693,7 @@ MainStatusName FightState2::getNewStatus(Pokemon * defender, Attack* attack) {
         return MainStatusName::Sleep;
     
     Log("Reached the end of FightState getNewStatus", Logger::WARNING);
-    return NoMainStatus;
+    return MainStatusName::NoMainStatus;
 }
 
 
