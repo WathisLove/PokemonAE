@@ -16,11 +16,10 @@
 
 #include <SFML/Graphics.hpp>
 
-#include "resources/InteractionHolder.hpp"
-
 class TextureHolder;
 class FontHolder;
 class InteractionHolder;
+class SoundBufferHolder;
 
 
 class Context {
@@ -51,6 +50,13 @@ public:
      * @return a pointer to the Interaction Holder
      */
     InteractionHolder* getInteractionHolder();
+
+
+    /**
+     * Return a pointer to the SoundBuffer holder
+     * @return a pointer to the SoundBuffer holder
+     */
+    SoundBufferHolder* getSoundBufferHolder();
     
     
     /**
@@ -75,9 +81,12 @@ private:
     
     // Font Holder
     FontHolder* m_fontHolder;
-    
+
     // Interaction Holder
     InteractionHolder* m_interactionHolder;
+
+    // Sound Buffer Holder
+    SoundBufferHolder* m_soundBufferHolder;
 
 };
 

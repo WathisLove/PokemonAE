@@ -3,14 +3,16 @@
 #include "resources/TextureHolder.hpp"
 #include "resources/FontHolder.hpp"
 #include "resources/InteractionHolder.hpp"
+#include "resources/SoundBufferHolder.hpp"
 #include "Constants.hpp"
 
 
 Context::Context() :
-m_window(sf::VideoMode(SCREEN_SIZE.x, SCREEN_SIZE.y), "Pokemon alpha 20 (WIP)"),
+m_window(sf::VideoMode(SCREEN_SIZE.x, SCREEN_SIZE.y), "Pokemon alpha 25 (WIP)"),
 m_textureHolder(TextureHolder::buildStandardTH()),
 m_fontHolder(FontHolder::buildStandardFH()),
-m_interactionHolder(new InteractionHolder())
+m_interactionHolder(new InteractionHolder()),
+m_soundBufferHolder(new SoundBufferHolder())
 {
     m_window.setFramerateLimit(FRAME_RATE);
 }
@@ -21,6 +23,7 @@ Context::~Context() {
     delete m_fontHolder;
     delete m_textureHolder;
     delete m_interactionHolder;
+    delete m_soundBufferHolder;
 }
 
 
@@ -45,6 +48,12 @@ FontHolder* Context::getFontHolder() {
 
 InteractionHolder* Context::getInteractionHolder() {
     return m_interactionHolder;
+}
+
+
+
+SoundBufferHolder * Context::getSoundBufferHolder() {
+    return m_soundBufferHolder;
 }
 
 
