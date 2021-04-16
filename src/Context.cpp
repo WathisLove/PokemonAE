@@ -4,6 +4,7 @@
 #include "resources/FontHolder.hpp"
 #include "resources/InteractionHolder.hpp"
 #include "resources/SoundBufferHolder.hpp"
+#include "resources/MusicPlayer.hpp"
 #include "Constants.hpp"
 
 
@@ -13,6 +14,7 @@ m_textureHolder(TextureHolder::buildStandardTH()),
 m_fontHolder(FontHolder::buildStandardFH()),
 m_interactionHolder(new InteractionHolder()),
 m_soundBufferHolder(new SoundBufferHolder())
+m_musicPlayer(new MusicPlayer())
 {
     m_window.setFramerateLimit(FRAME_RATE);
 }
@@ -54,6 +56,11 @@ InteractionHolder* Context::getInteractionHolder() {
 
 SoundBufferHolder * Context::getSoundBufferHolder() {
     return m_soundBufferHolder;
+
+
+
+MusicPlayer* Context::getMusicPlayer() {
+    return m_musicPlayer;
 }
 
 

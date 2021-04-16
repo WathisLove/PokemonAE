@@ -8,6 +8,7 @@
 #include "../states/StateStack.hpp"
 #include "../utility/CSVParser.hpp"
 #include "../utility/Logger.hpp"
+#include "../resources/MusicPlayer.hpp"
 
 #include <iostream>
 #include <cassert>
@@ -34,6 +35,14 @@ const std::map<ZoneID, sf::String> Zone::zoneNames{
 
 
 std::multimap<ZoneID, ZoneChanger*> Zone::zoneChangersStorage{};
+
+
+
+const std::map<ZoneID, Music::ID> Zone::zoneMusics{
+        {ZoneID::city_1, Music::City_1},
+        {ZoneID::city_1_inside, Music::City_1},
+        {ZoneID::road_1, Music::Road_1},
+};
 
 
 
@@ -260,6 +269,13 @@ void Zone::loadZone(ZoneID id) {
     
     // Update the Character zones
     m_character->addVisitedZone(id);
+
+    // Plays the Zone music if there is one assigned
+    if(zoneMusics.find(id) != zoneMusics.end()){
+        m_context.getMusicPlayer()->play(zoneMusics.at(id));
+    }
+    else
+        m_context.getMusicPlayer()->stop();
 }
 
 

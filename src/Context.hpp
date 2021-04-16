@@ -20,6 +20,7 @@ class TextureHolder;
 class FontHolder;
 class InteractionHolder;
 class SoundBufferHolder;
+class MusicPlayer;
 
 
 class Context {
@@ -57,6 +58,13 @@ public:
      * @return a pointer to the SoundBuffer holder
      */
     SoundBufferHolder* getSoundBufferHolder();
+
+
+    /**
+     * Returns a pointer to the Music Player
+     * @return
+     */
+    MusicPlayer* getMusicPlayer();
     
     
     /**
@@ -87,6 +95,9 @@ private:
 
     // Sound Buffer Holder
     SoundBufferHolder* m_soundBufferHolder;
+
+    // Music Player
+    MusicPlayer* m_musicPlayer;
 
 };
 

@@ -8,7 +8,7 @@ m_show(false)
     m_text.setFillColor(sf::Color::White);
     m_text.setString("R : Toggle Running \n"
                     "F1 : Debug Keys    F2 : Stack Messages \nF3 : Heal Team \nF4 : Level Up \n"
-                    "F5 : Toggle Music    F6 : Freeze Character    F7 : Unfreeze Character\nF9 : Show Character Infos \nF10 : Game Speed \n"
+                    "F6 : Freeze Character    F7 : Unfreeze Character\nF9 : Show Character Infos \nF10 : Game Speed \n"
                     "F11 : Screenshot \nF12 : Restart Game"
                     "\n- Fight -\nF7 : Close Fight \n+ : Ennemy 1 HP \n- : Ally 1 HP");
 }
