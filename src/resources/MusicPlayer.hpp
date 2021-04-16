@@ -45,6 +45,9 @@ private:
     // The Player music
     sf::Music m_music;
 
+    // The current Music
+    Music::ID m_currentID;
+
     // Music volume
     float m_volume;
 

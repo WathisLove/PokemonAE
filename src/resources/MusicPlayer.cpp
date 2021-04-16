@@ -5,32 +5,45 @@
 
 
 const std::map<Music::ID, std::string> MusicPlayer::musicFiles{
-
+        {Music::City_1, "data/musics/city_1.ogg"},
+        {Music::Road_1, "data/musics/road_1.ogg"},
 };
 
 
 
 MusicPlayer::MusicPlayer() :
-m_volume(100){
-
+m_currentID(Music::NONE){
+    setVolume(35);
 }
 
 
 
 void MusicPlayer::play(Music::ID music) {
-    // If the music file is in the map
-    if(musicFiles.find(music) != musicFiles.end()){
-        m_music.openFromFile(musicFiles.at(music));
-        m_music.play();
+    if(music != m_currentID){
+        // Stop if requesting NONE
+        if(music == Music::NONE)
+            m_music.stop();
+
+        // If the music file is in the map
+        else if(musicFiles.find(music) != musicFiles.end()){
+            m_music.openFromFile(musicFiles.at(music));
+            m_music.play();
+            m_music.setLoop(true);
+        }
+        else
+            Log("Can't find music path for music ID " + toString(music));
+
+        // Update the current music playing
+        m_currentID = music;
     }
-    else
-        Log("Can't find music path for music ID " + toString(music));
 }
 
 
 
 void MusicPlayer::stop() {
     m_music.stop();
+
+    m_currentID = Music::NONE;
 }
 
 

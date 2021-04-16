@@ -6,6 +6,7 @@ namespace Music
 {
     enum ID
     {
+        NONE = -1,
         City_1,
         Road_1,
     };

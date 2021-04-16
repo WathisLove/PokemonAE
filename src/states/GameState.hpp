@@ -21,8 +21,6 @@
 #include "State.hpp"
 #include "../ui/DebugPanel.hpp"
 
-#include <SFML/Audio.hpp>
-
 class Interaction;
 
 
@@ -156,9 +154,6 @@ protected:
     
     // Main Character
     Character m_character;
-    
-    // A background music
-    sf::Music m_music;
     
     // A debug panel for the Keyboard infos
     DebugPanel m_debugPanel;
