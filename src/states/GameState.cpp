@@ -41,12 +41,6 @@ m_interactionEntity(nullptr)
     for(int i = 0; i < static_cast<int>(ItemID::LAST_ITEM); i++){
         m_character.giveItem((ItemID)i, randomInt(10, 100));
     }
-    
-    
-    m_music.openFromFile("data/musics/eterna_forest.ogg");
-    m_music.setVolume(3);
-    m_music.setLoop(true);
-    //m_music.play();
 }
 
 
@@ -200,14 +194,6 @@ bool GameState::handleEvent(sf::Event& event) {
                         i = m_character.getNbPokemon();
                     }
                 }
-                break;
-            // Display the info string
-            case sf::Keyboard::F5:
-                std::cout << " <=> Music changer <=> " << std::endl;
-                if(m_music.getStatus() == sf::Music::Playing)
-                    m_music.pause();
-                else
-                    m_music.play();
                 break;
             case sf::Keyboard::F8:
                 std::cout << " <=> Learn Attack State <=> " << std::endl;

@@ -388,7 +388,7 @@ set(SOURCE_FILES
         src/ItemEnums.hpp
         src/main.cpp
         src/Utilities.cpp
-        src/Utilities.hpp)
+        src/Utilities.hpp src/resources/MusicPlayer.cpp src/resources/MusicPlayer.hpp src/resources/SoundPlayer.cpp src/resources/SoundPlayer.hpp src/resources/SoundEffects.hpp src/resources/Musics.h src/resources/SoundBufferHolder.cpp src/resources/SoundBufferHolder.hpp)
 
 add_executable(PokemonAE ${SOURCE_FILES})
 target_link_libraries(PokemonAE sfml-system sfml-window sfml-graphics sfml-audio)

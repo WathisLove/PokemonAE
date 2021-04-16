@@ -26,6 +26,7 @@
 #include "StoryTrigger.hpp"
 #include "../entities/EntityLoader.hpp"
 #include "ZoneDialogLoader.hpp"
+#include "../resources/Musics.h"
 
 
 using namespace std;
@@ -311,6 +312,9 @@ private:
     
     // Multimap of Zone Changers
     static std::multimap<ZoneID, ZoneChanger*> zoneChangersStorage;
+
+    // Map for zone musics
+    static const std::map<ZoneID, Music::ID> zoneMusics;
     
     
 //===============// Private Attributes //===============//
