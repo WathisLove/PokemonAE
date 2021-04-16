@@ -17,6 +17,8 @@
 #include "Entity.hpp"
 #include "../inventory/Item.hpp"
 
+class Interaction;
+
 class PhysicalItem : public Entity{
 public:
     
