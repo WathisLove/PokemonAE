@@ -193,6 +193,8 @@ bool Zone::canWalkOnCase(sf::Vector2i index) {
 
 
 bool Zone::canJumpOverCase(sf::Vector2i index, Direction dir) const {
+    if(isOutOfBounds(index)) return false;
+
     return m_collisionLayer->canJumpOver(index, dir);
 }
 
