@@ -500,7 +500,9 @@ MainStatus Pokemon::getMainStatus() const {
 
 
 void Pokemon::setMainStatus(MainStatus status) {
-    m_mainStatus = status;
+    // Do not set a Main status if KO
+    if(!isKO() || status.getName() == MainStatusName::NoMainStatus)
+        m_mainStatus = status;
 }
 
 
@@ -620,6 +622,10 @@ void Pokemon::setHP(int val) {
         m_health = getStatValue(StatName::health);
     else
         m_health = val;
+
+    // remove status if KO
+    if(isKO())
+        m_mainStatus.clearStatus();
 }
 
 
