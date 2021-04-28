@@ -590,7 +590,7 @@ void BagState::useSelectedItem() {
 
 void BagState::useItemOnAttack(Attack* attack) {
     // Get the item
-    Item* item = takeSelectedItem();
+    Item* item = new Item(getItemIDSelected());
     
     if(item->hasEffectOnAttack(attack)){
         std::queue<ItemEffect*> effects = item->onAttack(attack);
