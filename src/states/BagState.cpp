@@ -206,7 +206,6 @@ bool BagState::update(float dt) {
     }
     // Dialogs for the ITem effects
     else if(m_currentStage == BagStage::Bag_ItemEffects){
-        // TODO
         if(!m_itemEffects.empty()){
             Pokemon* p = getSelectedPokemon();
             

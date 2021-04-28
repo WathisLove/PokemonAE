@@ -2193,7 +2193,6 @@ void FightState2::useEnnemyItem() {
     m_ui.addDialog(getTrainerName() + L" utilise l'objet " + item->getName() + L" ! ");
     
     if(item->hasEffectOnPokemon(pokemon)){
-        // TODO
         auto effects = item->onPokemon(pokemon);
         
         // Take off the item
