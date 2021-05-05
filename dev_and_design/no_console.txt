@@ -1,0 +1,3 @@
+Dans linker -> Add option : -mwindows
+
+Puis recompiler juste le .exe

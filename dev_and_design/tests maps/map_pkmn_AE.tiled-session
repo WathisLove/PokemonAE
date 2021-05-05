@@ -1,0 +1,522 @@
+{
+    "Map/SizeTest": {
+        "height": 4300,
+        "width": 2
+    },
+    "activeFile": "my_bw_tileset___requests_open_by_chimcharsfireworkd-d3kgucf.png.tsx",
+    "expandedProjectPaths": [
+        ".",
+        "world"
+    ],
+    "exportAsImage.drawTileGrid": false,
+    "exportAsImage.includeBackgroundColor": false,
+    "exportAsImage.useCurrentScale": false,
+    "exportAsImage.visibleLayersOnly": true,
+    "file.lastUsedOpenFilter": "Tous les Fichiers (*)",
+    "fileStates": {
+        "C:/Users/mrred/Desktop/OpenCiv/map_tests/1.tmx": {
+            "scale": 1,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 1315,
+                "y": 165
+            }
+        },
+        "D:/Bureau/Pokemon AE/maps/city_1/city_1.tmx": {
+            "scale": 2,
+            "selectedLayer": 2,
+            "viewCenter": {
+                "x": 448.75,
+                "y": 253.75
+            }
+        },
+        "D:/Bureau/Pokemon AE/maps/outside.tsx": {
+            "scaleInDock": 2
+        },
+        "D:/Bureau/Pokemon AE/maps/road_1/road_1.tmx": {
+            "scale": 1.5,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 250.99999999999997,
+                "y": 279.66666666666663
+            }
+        },
+        "D:/Bureau/sans titre.tmx": {
+            "scale": 2,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 234.5,
+                "y": 161.5
+            }
+        },
+        "D:/Documents/Cours/Projet Annuel 4A/mockup plan/matrice.tmx": {
+            "scale": 1,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 546,
+                "y": 260.5
+            }
+        },
+        "D:/Documents/Cours/Projet Annuel 4A/mockup plan/tiles.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "D:/Documents/Cours/S7/CPOO2/carte/test.tmx": {
+            "scale": 1,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 583,
+                "y": 425
+            }
+        },
+        "D:/Documents/MEGAsync/Dev Pokemania/tests maps/Coal City.tmx": {
+            "scale": 0.75,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 288,
+                "y": 284
+            }
+        },
+        "D:/Documents/MEGAsync/Dev Pokemania/tests maps/Farm.tmx": {
+            "scale": 2,
+            "selectedLayer": 3,
+            "viewCenter": {
+                "x": 297,
+                "y": 277.5
+            }
+        },
+        "D:/Documents/MEGAsync/Dev Pokemania/tests maps/Lugia Way.tmx": {
+            "scale": 1.5,
+            "selectedLayer": 2,
+            "viewCenter": {
+                "x": 291.3333333333333,
+                "y": 215.33333333333331
+            }
+        },
+        "D:/Documents/MEGAsync/Dev Pokemania/tests maps/Map.tmx": {
+            "scale": 2,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 531.5,
+                "y": 97.5
+            }
+        },
+        "D:/Documents/MEGAsync/Dev Pokemania/tests maps/Oasis City.tmx": {
+            "scale": 4,
+            "selectedLayer": 1,
+            "viewCenter": {
+                "x": 539.75,
+                "y": 655.5
+            }
+        },
+        "D:/Documents/MEGAsync/Dev Pokemania/tests maps/city_1_coast.tmx": {
+            "scale": 1,
+            "selectedLayer": 1,
+            "viewCenter": {
+                "x": 1085,
+                "y": 288
+            }
+        },
+        "D:/Documents/MEGAsync/Dev Pokemania/tests maps/city_2.tmx": {
+            "scale": 0.75,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 432,
+                "y": 417.3333333333333
+            }
+        },
+        "D:/Documents/MEGAsync/Dev Pokemania/tests maps/road_1.tmx": {
+            "scale": 0.75,
+            "selectedLayer": 1,
+            "viewCenter": {
+                "x": 116,
+                "y": 460
+            }
+        },
+        "D:/Documents/MEGAsync/Dev Pokemania/tests maps/sandbox.tmx": {
+            "scale": 1.5,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 207.33333333333331,
+                "y": 218
+            }
+        },
+        "D:/Documents/MEGAsync/Dev Pokemania/tests maps/test_shaders.tmx": {
+            "scale": 2,
+            "selectedLayer": 1,
+            "viewCenter": {
+                "x": 93,
+                "y": 148
+            }
+        },
+        "D:/Documents/MEGAsync/Dev Pokemania/tileset perso/test grass.tmx": {
+            "scale": 3,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 168.66666666666666,
+                "y": 46.33333333333333
+            }
+        },
+        "D:/Documents/MEGAsync/PokeMania/data/zones/city_1/city_1.tmx": {
+            "scale": 1,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 397,
+                "y": 200
+            }
+        },
+        "D:/Documents/MEGAsync/PokeMania/maps/city_1/city_1.tmx": {
+            "scale": 4,
+            "selectedLayer": 2,
+            "viewCenter": {
+                "x": 473.5,
+                "y": 331.5
+            }
+        },
+        "D:/Documents/MEGAsync/PokeMania/maps/move_test/move_test.tmx": {
+            "scale": 3,
+            "selectedLayer": 2,
+            "viewCenter": {
+                "x": 370,
+                "y": 120.66666666666666
+            }
+        },
+        "D:/Documents/MEGAsync/PokeMania/maps/road_1/road_1.tmx": {
+            "scale": 1.5,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 161.33333333333331,
+                "y": 404
+            }
+        },
+        "D:/Documents/Programmation/C++/SFML_Tiles_Display/assert/map_test_iso.tmx": {
+            "scale": 0.75,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 640,
+                "y": 320
+            }
+        },
+        "D:/Documents/Programmation/C++/SFML_Tiles_Display/assert/sans-titre.tmx": {
+            "scale": 0.75,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 736,
+                "y": 176
+            }
+        },
+        "D:/Documents/Programmation/Poke/maps/city_1/city_1.tmx": {
+            "scale": 2,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 626,
+                "y": 382.5
+            }
+        },
+        "D:/Documents/Programmation/Poke/maps/city_1/city_1_copy.tmx": {
+            "scale": 1,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 400,
+                "y": 400
+            }
+        },
+        "D:/Documents/Programmation/Poke/maps/city_1/city_1_h2/city_1_h2.tmx": {
+            "scale": 4,
+            "selectedLayer": 2,
+            "viewCenter": {
+                "x": 95.75,
+                "y": 88
+            }
+        },
+        "D:/Documents/Programmation/Poke/maps/city_1/city_1_h3_1/city_1_h3_1.tmx": {
+            "scale": 4,
+            "selectedLayer": 2,
+            "viewCenter": {
+                "x": 95.75,
+                "y": 88
+            }
+        },
+        "D:/Documents/Programmation/Poke/maps/city_1/city_1_h3_2/city_1_h3_2.tmx": {
+            "scale": 5.5,
+            "selectedLayer": 2,
+            "viewCenter": {
+                "x": 63.81818181818182,
+                "y": 56
+            }
+        },
+        "D:/Documents/Programmation/Poke/maps/city_1/city_1_h3_3/city_1_h3_3.tmx": {
+            "scale": 5.5,
+            "selectedLayer": 3,
+            "viewCenter": {
+                "x": 63.81818181818182,
+                "y": 56
+            }
+        },
+        "D:/Documents/Programmation/Poke/maps/city_1/city_1_h4/city_1_h4.tmx": {
+            "scale": 4,
+            "selectedLayer": 2,
+            "viewCenter": {
+                "x": 63.75,
+                "y": 80
+            }
+        },
+        "D:/Documents/Programmation/Poke/maps/city_1/city_1_h5/city_1_h5.tmx": {
+            "scale": 2,
+            "selectedLayer": 2,
+            "viewCenter": {
+                "x": 111.5,
+                "y": 72
+            }
+        },
+        "D:/Documents/Programmation/Poke/maps/city_1/city_1_h6/city_1_h6.tmx": {
+            "scale": 5.5,
+            "selectedLayer": 2,
+            "viewCenter": {
+                "x": 63.63636363636364,
+                "y": 72
+            }
+        },
+        "D:/Documents/Programmation/Poke/maps/city_1/city_1_lab/city_1_lab.tmx": {
+            "scale": 3,
+            "selectedLayer": 3,
+            "viewCenter": {
+                "x": 95.66666666666666,
+                "y": 136
+            }
+        },
+        "D:/Documents/Programmation/Poke/maps/city_1_h1/city_1_h1.tmx": {
+            "scale": 4,
+            "selectedLayer": 2,
+            "viewCenter": {
+                "x": 96,
+                "y": 88
+            }
+        },
+        "D:/Documents/Programmation/Poke/maps/inside_home.tmx": {
+            "scale": 4,
+            "selectedLayer": 2,
+            "viewCenter": {
+                "x": 80,
+                "y": 80
+            }
+        },
+        "D:/Documents/Programmation/Poke/maps/road_1.tmx": {
+            "scale": 4,
+            "selectedLayer": 1,
+            "viewCenter": {
+                "x": 142.75,
+                "y": 236.75
+            }
+        },
+        "D:/Documents/Programmation/Poke/maps/road_1/road_1.tmx": {
+            "scale": 1.5,
+            "selectedLayer": 3,
+            "viewCenter": {
+                "x": 208,
+                "y": 280
+            }
+        },
+        "D:/Documents/Programmation/Poke/maps/test.tmx": {
+            "scale": 1.5,
+            "selectedLayer": 4,
+            "viewCenter": {
+                "x": 400,
+                "y": 202
+            }
+        },
+        "D:/Documents/Programmation/Poke/maps/test2.tmx": {
+            "scale": 3,
+            "selectedLayer": 2,
+            "viewCenter": {
+                "x": 478,
+                "y": 126.33333333333333
+            }
+        },
+        "D:/Documents/Programmation/PokeMania/maps/city_1_h3_1/city_1_h3_1.tmx": {
+            "scale": 4,
+            "selectedLayer": 2,
+            "viewCenter": {
+                "x": 181,
+                "y": 94
+            }
+        },
+        "D:/Documents/Programmation/PokeMania/maps/city_1_h3_3/city_1_h3_3.tmx": {
+            "scale": 5.5,
+            "selectedLayer": 3,
+            "viewCenter": {
+                "x": 134.36363636363637,
+                "y": 56.909090909090914
+            }
+        },
+        "D:/Documents/Programmation/PokeMania/maps/city_1_lab/city_1_lab.tmx": {
+            "scale": 2,
+            "selectedLayer": 1,
+            "viewCenter": {
+                "x": 93.5,
+                "y": 136
+            }
+        },
+        "Farm.tmx": {
+            "scale": 1,
+            "selectedLayer": 2,
+            "viewCenter": {
+                "x": 312.5,
+                "y": 240.5
+            }
+        },
+        "Lugia Way.tmx": {
+            "scale": 3,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 242.49999999999997,
+                "y": 214.5
+            }
+        },
+        "Map.tmx": {
+            "scale": 1.0993951612903226,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 193.28809829451677,
+                "y": 213.29910141206676
+            }
+        },
+        "Oasis City.tmx": {
+            "scale": 1,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 436.5,
+                "y": 326.5
+            }
+        },
+        "calis project.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "city_1_coast.tmx": {
+            "scale": 0.75,
+            "selectedLayer": 3,
+            "viewCenter": {
+                "x": 959.3333333333333,
+                "y": 439.33333333333326
+            }
+        },
+        "city_1_inside.tmx": {
+            "scale": 1,
+            "selectedLayer": 2,
+            "viewCenter": {
+                "x": 49.5,
+                "y": 390
+            }
+        },
+        "city_2.tmx": {
+            "scale": 2,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": -424.75,
+                "y": 2619
+            }
+        },
+        "city_2_inside.tmx": {
+            "scale": 3,
+            "selectedLayer": 1,
+            "viewCenter": {
+                "x": 479.83333333333326,
+                "y": 240
+            }
+        },
+        "farm.tmx": {
+            "scale": 1,
+            "selectedLayer": 1,
+            "viewCenter": {
+                "x": 320.5,
+                "y": 240.5
+            }
+        },
+        "my_bw_tileset___requests_open_by_chimcharsfireworkd-d3kgucf.png.tsx": {
+            "scaleInDock": 3,
+            "scaleInEditor": 4
+        },
+        "road_1.tmx": {
+            "scale": 0.5,
+            "selectedLayer": 3,
+            "viewCenter": {
+                "x": 497,
+                "y": 409
+            }
+        },
+        "road_2.tmx": {
+            "scale": 0.33,
+            "selectedLayer": 4,
+            "viewCenter": {
+                "x": 800,
+                "y": 1134.8484848484848
+            }
+        },
+        "sandbox.tmx": {
+            "scale": 2,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 182,
+                "y": 195.25
+            }
+        },
+        "test_shaders.tmx": {
+            "scale": 2.30078125,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 160.38030560271648,
+                "y": 160.1629881154499
+            }
+        },
+        "tileset 2.tsx": {
+            "scaleInDock": 2,
+            "scaleInEditor": 2
+        }
+    },
+    "loadedWorlds": [
+        "D:/Documents/MEGAsync/Dev Pokemon AE/tests maps/world/pokemon_ae_world.world"
+    ],
+    "map.fixedSize": true,
+    "map.height": 30,
+    "map.lastUsedExportFilter": "Fichiers CSV (*.csv)",
+    "map.lastUsedFormat": "tmx",
+    "map.orientation": 1,
+    "map.renderOrder": 3,
+    "map.tileHeight": 16,
+    "map.tileWidth": 16,
+    "map.width": 30,
+    "openFiles": [
+        "city_2.tmx",
+        "city_2_inside.tmx",
+        "city_1_inside.tmx",
+        "my_bw_tileset___requests_open_by_chimcharsfireworkd-d3kgucf.png.tsx"
+    ],
+    "project": "map_pkmn_AE.tiled-project",
+    "recentFiles": [
+        "city_2.tmx",
+        "city_2_inside.tmx",
+        "city_1_inside.tmx",
+        "my_bw_tileset___requests_open_by_chimcharsfireworkd-d3kgucf.png.tsx",
+        "farm.tmx",
+        "road_1.tmx",
+        "city_1_coast.tmx",
+        "road_2.tmx",
+        "D:/Documents/Cours/Projet Annuel 4A/mockup plan/tiles.tsx",
+        "D:/Documents/Cours/Projet Annuel 4A/mockup plan/matrice.tmx",
+        "calis project.tsx",
+        "Oasis City.tmx"
+    ],
+    "tileset.embedInMap": false,
+    "tileset.lastUsedFilter": "Tous les fichiers (*)",
+    "tileset.lastUsedFormat": "tsx",
+    "tileset.margin": 0,
+    "tileset.spacing": 0,
+    "tileset.tileSize": {
+        "height": 16,
+        "width": 16
+    },
+    "tileset.transparentColor": "#ffffff",
+    "tileset.type": 0,
+    "tileset.useTransparentColor": false
+}
