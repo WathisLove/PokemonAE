@@ -1,12 +1,8 @@
 #include "states/StateStack.hpp"
 #include "Context.hpp"
 #include <iostream>
-#include <SFML/Audio.hpp>
 #include <fstream>
 #include "Utilities.hpp"
-
-#include "pokemons/XPCurves.hpp"
-#include "utility/Date.hpp"
 
 
 template <typename C>

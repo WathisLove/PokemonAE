@@ -213,11 +213,11 @@ int Pokemon::getInFightStat(StatName stat) const{
     
     
     // Paralysis reduce the speed
-    if(stat == StatName::speed && m_mainStatus.getName() == Paralysis)
+    if(stat == StatName::speed && m_mainStatus.getName() == MainStatusName::Paralysis)
         statusCoef = 0.5;
     
     // Burn reduce the attack
-    if(stat == StatName::attack && m_mainStatus.getName() == Burn)
+    if(stat == StatName::attack && m_mainStatus.getName() == MainStatusName::Burn)
         statusCoef = 0.5;
     
     // Apply the item effect
@@ -500,7 +500,9 @@ MainStatus Pokemon::getMainStatus() const {
 
 
 void Pokemon::setMainStatus(MainStatus status) {
-    m_mainStatus = status;
+    // Do not set a Main status if KO
+    if(!isKO() || status.getName() == MainStatusName::NoMainStatus)
+        m_mainStatus = status;
 }
 
 
@@ -620,6 +622,10 @@ void Pokemon::setHP(int val) {
         m_health = getStatValue(StatName::health);
     else
         m_health = val;
+
+    // remove status if KO
+    if(isKO())
+        m_mainStatus.clearStatus();
 }
 
 

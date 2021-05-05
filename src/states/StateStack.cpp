@@ -29,7 +29,6 @@
 #include "CharacterInfoState.hpp"
 #include "BadgeState.hpp"
 #include "SellerState.hpp"
-#include "../entities/Champion.hpp"
 #include "PokedexState.hpp"
 #include "BuyingState.hpp"
 #include "SellerActionState.hpp"

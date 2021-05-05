@@ -206,7 +206,6 @@ bool BagState::update(float dt) {
     }
     // Dialogs for the ITem effects
     else if(m_currentStage == BagStage::Bag_ItemEffects){
-        // TODO
         if(!m_itemEffects.empty()){
             Pokemon* p = getSelectedPokemon();
             
@@ -590,7 +589,7 @@ void BagState::useSelectedItem() {
 
 void BagState::useItemOnAttack(Attack* attack) {
     // Get the item
-    Item* item = takeSelectedItem();
+    Item* item = new Item(getItemIDSelected());
     
     if(item->hasEffectOnAttack(attack)){
         std::queue<ItemEffect*> effects = item->onAttack(attack);

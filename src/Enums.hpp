@@ -51,7 +51,7 @@ enum ReactionType{
 
 
 
-enum MainStatusName{
+enum class MainStatusName{
     NoMainStatus,
     Burn,
     Freeze,

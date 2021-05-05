@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<template>
+ <tileset firstgid="1" source="my_bw_tileset___requests_open_by_chimcharsfireworkd-d3kgucf.png.tsx"/>
+ <object type="zone_dialog" gid="2502" width="16" height="16">
+  <properties>
+   <property name="string" value="Empty ZoneDialog"/>
+  </properties>
+ </object>
+</template>

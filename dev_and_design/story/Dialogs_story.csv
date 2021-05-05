@@ -1,0 +1,12 @@
+"PNJ_name (just for help)","PNJ_ID (int)","DIALOG_LINE (number)","STRING","ANSWERS / TARGET_STRINGS",,,"ADDITIONNAL_ACTION"
+"rival_school_wakeup",201,0,"@carac_maj !! \nTu as oublié ton réveil ou quoi ?","# next is auto if empty",,,"# actions to pop or push states for example"
+,201,1,"On a rendez-vous dans la salle principale.\n
+N’oublie pas de venir si tu veux recevoir ton diplôme !",,,,"# move him out and depop him"
+"rival_school_speech",,0,"@carac, par ici ! Assis-toi, ça va commencer.",,,,
+"school_director_speech",,0,"1, 2… 1, 2… Vous m’entendez ? Bien !",,,,
+,,1,"Bonjour à toutes et à tous ! ",,,,
+,,,"#discours",,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+"school_director_fight",,,,,,,

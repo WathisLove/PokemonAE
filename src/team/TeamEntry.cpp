@@ -192,7 +192,7 @@ void TeamEntry::createTexts() {
 void TeamEntry::updateStatus() {
     MainStatusName name = m_pokemon->getMainStatus().getName();
     
-    if(name == MainStatusName::NoMainStatus){
+    if(name == MainStatusName::NoMainStatus || m_pokemon->isKO()){
         m_showStatus = false;
     }
     else{

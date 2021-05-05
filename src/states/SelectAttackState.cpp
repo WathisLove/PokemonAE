@@ -44,23 +44,26 @@ void SelectAttackState::actionOnCompletion() {
 
 
 bool SelectAttackState::handleEvent(sf::Event& event) {
-    if(event.type == sf::Event::KeyPressed){
+    if(event.type == sf::Event::KeyPressed) {
         // Get the key code
         sf::Keyboard::Key key = event.key.code;
-        
-        if(key == sf::Keyboard::S)
+
+        if (key == sf::Keyboard::S)
             m_display.selectNext();
-        else if(key == sf::Keyboard::Z)
+        else if (key == sf::Keyboard::Z)
             m_display.selectPrevious();
-        
-        // Quit
-        else if(key == sf::Keyboard::Escape)
+
+            // Quit
+        else if (key == sf::Keyboard::Escape) {
+            m_stack->requestStackPop(); // Pop before dialog push
             m_isCompleted = true;
+        }
         
         // Choose attack
         else if(key == sf::Keyboard::Space){
-             m_stack->requestStackPop();
-            
+            m_stack->requestStackPop(); // Pop before dialog push
+            m_isCompleted = true;
+
             // create a Game Event for the attack selected
             GameEvent* event = new GameEvent(EventType::SelectingAttack);
             event->attack = m_pokemon->getAttackSet().getAttack(m_display.getSelected());

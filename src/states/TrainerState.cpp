@@ -20,13 +20,12 @@ m_character(character)
 {
     // Set the Satte ID
     m_id = StateID::TrainerS;
+
+    // Set the Character direction
+    character->setDirection(oppositeDirection(t->getDirection()));
     
     // Change the trainer mover so it goes to the Character position
     m_trainer->setMover(new SequenceMover(t->getPosition(), m_character->getFacedCase(), 1.f/m_trainer->getSpeed()));
-    
-    
-    // Set the Character direction
-    character->setDirection(oppositeDirection(t->getDirection()));
 }
 
 

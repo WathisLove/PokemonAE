@@ -26,6 +26,7 @@
 #include "StoryTrigger.hpp"
 #include "../entities/EntityLoader.hpp"
 #include "ZoneDialogLoader.hpp"
+#include "../resources/Musics.h"
 
 
 using namespace std;
@@ -46,7 +47,7 @@ class Zone
 {
 public:
 //===============// Static Methods //===============//
-    
+
     /**
      * Return the name of the zone as a string
      * @param id the id of the zone
@@ -85,12 +86,17 @@ public:
      * Draw the foreground and the foreground decoration
      */
     void drawForeground(sf::RenderTarget& target, sf::RenderStates states) const;
-    
-    
+
+
     /**
-     * Draw all the entities
+     * Draw entities below the player
      */
-    void drawEntities(sf::RenderTarget& target, sf::RenderStates states);
+    void drawEntitiesBelowPlayer(sf::RenderTarget& target, sf::RenderStates states, sf::Vector2i characterPos);
+
+    /**
+     * Dra entities above the player
+     */
+    void drawEntitiesAbovePlayer(sf::RenderTarget& target, sf::RenderStates states, sf::Vector2i characterPos);
     
     
     /**
@@ -306,6 +312,9 @@ private:
     
     // Multimap of Zone Changers
     static std::multimap<ZoneID, ZoneChanger*> zoneChangersStorage;
+
+    // Map for zone musics
+    static const std::map<ZoneID, Music::ID> zoneMusics;
     
     
 //===============// Private Attributes //===============//
