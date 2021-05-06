@@ -118,7 +118,7 @@ Type Attack::getType() const {
 
 
 std::string Attack::getInfoString() const {
-    return m_name + " (" + toString((int)m_id) + ")   Dmg : " + toString(m_damage) + "   PPs : " + toString(m_pp) + "/" + toString(m_ppMax);
+    return m_name.toAnsiString() + " (" + toString((int)m_id) + ")   Dmg : " + toString(m_damage) + "   PPs : " + toString(m_pp) + "/" + toString(m_ppMax);
 }
 
 

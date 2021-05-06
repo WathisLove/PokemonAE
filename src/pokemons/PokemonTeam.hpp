@@ -108,9 +108,8 @@ public:
      * Replace a pokemon in the team with an other
      * @param oldPoke a ponter to the old Pokemon
      * @param newPoke a pointer to the new Pokemon
-     * @return a pointer to the old Pokemon
      */
-    Pokemon* replacePokemonWith(Pokemon* oldPoke, Pokemon* newPoke);
+    void replacePokemonWith(Pokemon* oldPoke, Pokemon* newPoke);
     
     
     /**

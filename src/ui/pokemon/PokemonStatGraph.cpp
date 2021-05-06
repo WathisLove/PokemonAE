@@ -1,4 +1,5 @@
 #include "PokemonStatGraph.hpp"
+#include "../../Utilities.hpp"
 
 #include <cmath>
 #include <complex>
@@ -95,4 +96,6 @@ sf::Vector2f PokemonStatGraph::getDirectionVector(int index) {
         return sf::Vector2f(-std::sqrt(3.)/2., 1/2.);
     else if (finalNum == 5)
         return sf::Vector2f(-std::sqrt(3.)/2., -1/2.);
+
+    throw std::string("Reached en of getDirectionVector with" + toString(index));
 }

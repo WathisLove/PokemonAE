@@ -23,6 +23,8 @@ int Stats::getStatValue(StatName stat) const {
         case StatName::special_defense : return m_specialDefense;
         case StatName::speed : return m_speed;
     }
+
+    throw std::string("Requesting unknwon stat " + toString(static_cast<int>(stat)));
 }
 
 

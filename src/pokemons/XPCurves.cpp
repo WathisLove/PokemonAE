@@ -46,13 +46,13 @@ int getXPAtLevel(XPCurveType curveType, int currentLevel){
     
     else if(curveType == XPCurveType::XP_Fluctuating)
         return getFluctuatingXPAtLevel(currentLevel);
+
+    throw std::string("Unknown XP Curve : " + toString(static_cast<int>(curveType)));
 }
 
 
 
 int getSlowXPAtLevel(int currentLevel){
-    
-    
     return 1.25*(currentLevel*currentLevel*currentLevel);
 }
 

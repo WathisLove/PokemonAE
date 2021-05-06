@@ -299,7 +299,7 @@ bool Pokemon::canLearnByCT(PokemonID pokeID, AttackID id) {
 std::string Pokemon::getInfoString() const {
     std::string s("===> ");
     
-    s += m_name; s += "   Lvl  " + toString(m_level) + "\n";
+    s += m_name.toAnsiString(); s += "   Lvl  " + toString(m_level) + "\n";
     s+= "HP : " + toString(m_health) + " / " + toString(getStatValue(StatName::health)) + "\n";
     
     s += "XP : " + toString(m_xpCurrentLvl) + " / " + toString(getXPNextLevel()) + "   (total : " + toString(m_xpTotalEarned) + ")\n";
@@ -638,7 +638,7 @@ bool Pokemon::isFullHP() {
 
 Item* Pokemon::getItem() {
     if(!hasItem())
-        throw std::string("The pokemon " + m_name + " doesn't have any item");
+        throw std::string("The pokemon " + m_name.toAnsiString() + " doesn't have any item");
     
     return m_item;
 }
@@ -653,7 +653,7 @@ bool Pokemon::hasItem() const {
 
 Item* Pokemon::takeItem() {
     if(!hasItem())
-        throw std::string("The pokemon " + m_name + " doesn't have any item");
+        throw std::string("The pokemon " + m_name.toAnsiString() + " doesn't have any item");
     
     Item* item = m_item;
     
@@ -667,10 +667,10 @@ Item* Pokemon::takeItem() {
 void Pokemon::giveItem(Item* item) {
     // Check if we already have an item
     if(hasItem())
-        throw std::string("The pokemon " + m_name + " already holds " + m_item->getName().toAnsiString());
+        throw std::string("The pokemon " + m_name.toAnsiString() + " already holds " + m_item->getName().toAnsiString());
     
     else if(item == nullptr)
-        throw std::string("Trying to give a nullptr object to " + m_name);
+        throw std::string("Trying to give a nullptr object to " + m_name.toAnsiString());
     
     // Else set the pointer to the new item
     m_item = item;

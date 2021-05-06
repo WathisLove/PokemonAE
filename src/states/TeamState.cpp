@@ -271,7 +271,7 @@ void TeamState::choosePokemon() {
 void TeamState::chooseAction() {
     
     // Get the string to choose the selected action
-    const std::wstring& action = m_actionMenu.getSelectedText().getString();
+    const std::wstring& action = m_actionMenu.getSelectedText().getString().toWideString();
     
     if(action == L"Résumé"){
         openPokemonInfos();
@@ -314,8 +314,8 @@ void TeamState::chooseAction() {
 void TeamState::chooseObjectAction() {
     
     // Get the string to choose the selected action
-    const std::wstring& action = m_objectMenu.getSelectedText().getString();
-    
+    std::wstring action = m_objectMenu.getSelectedText().getString().toWideString();
+
     if(action == L"Donner"){
         openBag();
     }

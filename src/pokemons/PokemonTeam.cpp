@@ -217,7 +217,7 @@ Pokemon* PokemonTeam::replacePokemonWith(Pokemon* p, int index) {
 
 
 
-Pokemon* PokemonTeam::replacePokemonWith(Pokemon* oldPoke, Pokemon* newPoke) {
+void PokemonTeam::replacePokemonWith(Pokemon* oldPoke, Pokemon* newPoke) {
     Pokemon* old = nullptr;
     
     // Replace in the team
@@ -252,5 +252,5 @@ int PokemonTeam::getIndexOf(Pokemon* p) {
             return i;
     
     // Throw an exception if the pokemon was not found
-    throw std::string("Can't find pokemon " + p->getName() + " in team");
+    throw std::string("Can't find pokemon " + p->getName().toAnsiString() + " in team");
 }

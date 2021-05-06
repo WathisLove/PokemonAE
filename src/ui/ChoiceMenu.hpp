@@ -81,7 +81,7 @@ public:
      * Set the main menu to be actived or not
      * @param val true if the menu is now active
      */
-    bool setActivated(bool val);
+    void setActivated(bool val);
     
     
     /**

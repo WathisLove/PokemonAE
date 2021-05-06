@@ -328,7 +328,7 @@ void BagState::selectCurrentItem() {
 
 
 void BagState::selectItemUse() {
-    std::wstring menuEntry = m_menu.getSelectedText().getString();
+    std::wstring menuEntry = m_menu.getSelectedText().getString().toWideString();
     
     if(menuEntry == L"Utiliser"){
         m_currentStage = BagStage::Bag_UsingOnPokemon;

@@ -74,7 +74,7 @@ void ChoiceMenu::open() {
 
 
 
-bool ChoiceMenu::setActivated(bool val) {
+void ChoiceMenu::setActivated(bool val) {
     m_isActivated = val;
 }
 

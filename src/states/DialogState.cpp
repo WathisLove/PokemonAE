@@ -87,10 +87,10 @@ void DialogState::setDialogString() {
     std::wstring marker(L"@charac");
     
     // The character name that will replace the marker
-    std::wstring replacer(gamedata::characterName);
+    std::wstring replacer(gamedata::characterName.toWideString());
     
     // Replace @charac by the character name
-    replaceInString(dialog, marker, gamedata::characterName);
+    replaceInString(dialog, marker, gamedata::characterName.toWideString());
     
     // Adapte Length
     adaptLength(dialog, 560);
