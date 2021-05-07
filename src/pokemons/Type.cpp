@@ -1,6 +1,7 @@
 #include <cmath>
 #include "Type.hpp"
 #include "../Utilities.hpp"
+#include "../utility/Logger.hpp"
 
 // Set the TypeChart
 float Type::typeChart[18][18] = 
