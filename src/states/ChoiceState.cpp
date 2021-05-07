@@ -84,7 +84,7 @@ int ChoiceState::getEntrySelected() {
 
 
 std::wstring ChoiceState::getResultString() {
-    return m_menu.getSelectedText().getString();
+    return m_menu.getSelectedText().getString().toWideString();
 }
 
 

@@ -77,7 +77,7 @@ void Trainer::addPokemon(Pokemon* p) {
 
 
 std::string Trainer::getInfoString() const {
-    std::string s("Dresseur " + m_name + "\n");
+    std::string s("Dresseur " + m_name.toAnsiString() + "\n");
     s += "Defeated : " + toString<bool>(m_isDefeated) + "\n\n";
     
     s += m_team->getInfoString();

@@ -42,7 +42,7 @@ Direction oppositeDirection(Direction dir){
             return Direction::North;
         case Direction::East:
             return Direction::West;
-        case Direction::West:
+        default:
             return Direction::East;
     }
 }

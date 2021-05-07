@@ -1,5 +1,6 @@
 #include <cmath>
 #include "Type.hpp"
+#include "../Utilities.hpp"
 
 // Set the TypeChart
 float Type::typeChart[18][18] = 
@@ -112,6 +113,9 @@ std::string Type::typeToString(TypeName tn) {
         case TypeName::Steel: return "Steel";
         case TypeName::Water: return "Water";
     }
+
+    Log("Unknown type requested " + toString(static_cast<int>(tn)));
+    return "Water";
 }
 
 

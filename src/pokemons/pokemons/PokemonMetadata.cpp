@@ -10,7 +10,7 @@
 PokemonMetadata::PokemonMetadata() :
 m_captureLevel(1),
 m_captureZone(L"Zone inconnue"),
-m_originalTrainer(gamedata::characterName){
+m_originalTrainer(gamedata::characterName.toWideString()){
     
 }
 
@@ -30,14 +30,14 @@ void PokemonMetadata::readFromString(const std::string& str) {
     
     // Set the attributes
     m_captureLevel = level;
-    m_captureZone = Zone::getZoneName((ZoneID) zoneID);
+    m_captureZone = Zone::getZoneName((ZoneID) zoneID).toWideString();
     m_captureDate = Date(day, month, year);
     
     if(trainerID > 0)
         m_originalTrainer = TrainerInfo::getTrainerName(trainerID);
     else
         // Set the original trainer name to the current player name
-        m_originalTrainer = gamedata::characterName;
+        m_originalTrainer = gamedata::characterName.toWideString();
 }
 
 
@@ -99,7 +99,7 @@ void PokemonMetadata::setToCurrentDate() {
 
 
 void PokemonMetadata::setCaptureZone(ZoneID zoneID) {
-    m_captureZone = Zone::getZoneName(zoneID);
+    m_captureZone = Zone::getZoneName(zoneID).toWideString();
 }
 
 

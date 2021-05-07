@@ -14,8 +14,8 @@ const sf::SoundBuffer & SoundBufferHolder::get(SoundEffect::ID sound) const {
     if(m_soundBuffers.find(sound) != m_soundBuffers.end()){
         return m_soundBuffers.at(sound);
     }
-    else
-        Log("Can't find sound for SoundID " + toString(sound));
+    Log("Can't find sound for SoundID " + toString(sound));
+    throw std::string("Can't find sound for SoundID " + toString(sound));
 }
 
 
@@ -27,4 +27,5 @@ void SoundBufferHolder::loadFromFile(SoundEffect::ID sound, const std::string &s
         m_soundBuffers[sound] = buffer;
     else
         Log("Can't load sound for SoundID " + toString(sound));
+    throw std::string("Can't load sound for SoundID " + toString(sound));
 }

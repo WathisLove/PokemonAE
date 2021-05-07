@@ -57,5 +57,6 @@ bool SellerActionState::handleEvent(sf::Event& event) {
         else
             ChoiceState::handleEvent(event);
     }
-        
+
+    return false;
 }
