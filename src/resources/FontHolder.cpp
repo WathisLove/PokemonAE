@@ -6,7 +6,7 @@
 FontHolder* FontHolder::buildStandardFH() {
     FontHolder* fontHolder = new FontHolder;
     // Load all the stadard textures
-    fontHolder->loadFromFile(FontID::dialogFont, "data/fonts/calibri.ttf");
+    fontHolder->loadFromFile(FontID::dialogFont, "../data/fonts/calibri.ttf");
     
     // Return the standard texture holder
     return fontHolder;

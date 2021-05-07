@@ -1,0 +1,22 @@
+Npc (0);NpcID value (1);Interaction Number (2);Interaction Type (3);Interaction Data (4);Interaction Data (5);Actions (6)
+Professeur Chen;4001;0;DIALOG;Tiens ? Je crois c'est la première fois que l'on se rencontre.;;
+Professeur Chen;4001;1;DIALOG;Tu dois être @charac ? Ton école m'a prévenu de ton arrivée.;;
+Professeur Chen;4001;2;DIALOG;Je me présente : je suis le professeur Chen, chercheur en pokemons.;;
+Professeur Chen;4001;3;DIALOG; Je suis venu dans cette région pour poursuivre mes recherches.;;
+Professeur Chen;4001;4;DIALOG;Je sais que tu es venu pour nous aider, mais comme tu peux le voir, notre équipe au laboratoire est bien remplie.;;
+Professeur Chen;4001;5;DIALOG;Ce qu'il nous manque, ce sont des relevés terrain.;;
+Professeur Chen;4001;6;DIALOG;Nous avons besoin de données sur les combats, les évolutions et tout ce qui est lié aux pokemons dans leur état naturel.;;
+Professeur Chen;4001;7;DIALOG;Tu pourras en profiter pour explorer la région et te confronter aux défis représenter par les arènes.;;
+Professeur Chen;4001;8;CHOICE;Tu veux bien t'en charger ? ;Oui:20+Non:30;
+Professeur Chen;4001;20;DIALOG;Parfait ! Ton Pokedex enregistre automatiquement les données des pokemons que tu rencontreras,;;
+Professeur Chen;4001;21;DIALOG; mais il faudra que tu viennes me les apporter par toi même de temps à autre.;;
+Professeur Chen;4001;22;DIALOG;Je t'offre ces pokeballs pour capturer tes premiers pokemons. N'hésite pas à en racheter !;;
+Professeur Chen;4001;23;ITEM_GIFT;Poke Ball:5;;SETFIRST:50
+Professeur Chen;4001;30;DIALOG;Vraiment ? Je suis surpris. Enfin, j'imagine que je ne peux pas te forcer. ;;
+Professeur Chen;4001;31;DIALOG;N'hésite pas à demander à mes assistants s'ils ont quelque chose à te confier.;;SETFIRST:40
+Professeur Chen;4001;40;CHOICE;Alors @charac, as-tu décidé ce que tu voulais faire ?;Affronter les arènes:41+Explorer la région:41;
+Professeur Chen;4001;41;DIALOG;Je te souhaite bon voyage ! N'oublie pas de revenir de temps à autre, pour me ramener les données de ton Pokedex.;;SETFIRST:50
+Professeur Chen;4001;50;DIALOG;Tu peux utiliser la machine derrière moi pour te soigner.;;SETFIRST:55
+Professeur Chen;4001;55;DIALOG;Mes assistants font un excellent travail, mais j'aimerai qu'ils prennent plus de temps pour eux-mêmes.;;
+Professeur Chen;4001;56;DIALOG;J'ai parfois l'impression qu'ils passent leurs journées dans le laboratoire.;;SETFIRST:60
+Professeur Chen;4001;60;DIALOG;Les dresseurs dans cette région sont coriaces et ils n'hésitent pas à lancer des défis, même face à plus fort qu'eux.;;SETFIRST:50

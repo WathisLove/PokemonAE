@@ -1,0 +1,12 @@
+src;Target Zone;target x;Target Direction
+71 1 7 1;road_1;8 48 7 1;NORTH
+29 18 1 1;city_1_inside;7 9 2 1;NORTH
+21 23 1 1;city_1_inside;1 26 2 1;NORTH
+33 4 1 1;city_1_inside;1 44 2 1;NORTH
+45 13 1 1;city_1_inside;4 63 2 1;NORTH
+46 28 1 1;city_1_inside;35 7 2 1;NORTH
+59 12 1 1;city_1_inside;32 26 2 1;NORTH
+64 10 1 1;city_1_inside;33 44 2 1;NORTH
+70 20 1 1;city_1_inside;63 7 2 1;NORTH
+73 26 1 1;city_1_inside;64 26 2 1;NORTH
+85 13 1 1;city_1_inside;64 44 2 1;NORTH

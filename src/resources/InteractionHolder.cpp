@@ -106,7 +106,7 @@ void InteractionHolder::loadFiles() {
     // Load each file
     for(auto pair : Zone::zoneFileNames){
         // Create the path
-        string path = "data/interactions/" + pair.second + ".csv";
+        string path = "../data/interactions/" + pair.second + ".csv";
         
         loadSingleFile(path);
     }

@@ -298,7 +298,7 @@ void EntityLoader::addNpcCondition(NpcID npc, Condition* condition) {
 
 void EntityLoader::loadBoxPCsFiles() {
     // Open the file
-    CSVParser parser("data/entities/box_pcs.csv");
+    CSVParser parser("../data/entities/box_pcs.csv");
     
     // Ignore first line
     parser.readLine();
@@ -328,7 +328,7 @@ void EntityLoader::loadBoxPCsFiles() {
 void EntityLoader::loadPhysicalItemFiles() {
     // For each file
     for(auto it : Zone::zoneFileNames){
-        std::string path = "data/entities/physical_items/" + it.second + ".csv";
+        std::string path = "../data/entities/physical_items/" + it.second + ".csv";
         
         // Open the file
         CSVParser parser(path);
@@ -372,7 +372,7 @@ void EntityLoader::loadPhysicalItemFiles() {
 void EntityLoader::loadStoryTriggerFiles() {
     // For each file
     for(auto it : Zone::zoneFileNames){
-        std::string path = "data/entities/story_triggers/" + it.second + ".csv";
+        std::string path = "../data/entities/story_triggers/" + it.second + ".csv";
         
         // Open the file
         CSVParser parser(path);

@@ -1,0 +1,4 @@
+src;Target Zone;dest;Target Direction
+8 49 7 1;city_1;71 2 7 1;SOUTH
+40 29 1 5;farm_meuh;2 18 1 5;EAST
+14 1 8 1;city_2;46 47 8 1;NORTH

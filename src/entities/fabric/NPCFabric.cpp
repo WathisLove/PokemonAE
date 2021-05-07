@@ -267,7 +267,7 @@ void NPCFabric::loadSellerItemsFiles() {
     // Load each file
     for(auto pair : Zone::zoneFileNames){
         // Create the path
-        string path = "data/entities/seller_items/" + pair.second + ".csv";
+        string path = "../data/entities/seller_items/" + pair.second + ".csv";
         
         // Open the file
         CSVParser parser(path);
@@ -325,7 +325,7 @@ void NPCFabric::loadNpcFiles() {
     // Load each file
     for(auto pair : Zone::zoneFileNames){
         // Create the path
-        string path = "data/entities/npcs/" + pair.second + ".csv";
+        string path = "../data/entities/npcs/" + pair.second + ".csv";
         
         // Load the NPCs from the file
         loadNpcFile(path, pair.first);

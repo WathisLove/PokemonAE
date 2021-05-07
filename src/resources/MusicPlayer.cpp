@@ -5,8 +5,8 @@
 
 
 const std::map<Music::ID, std::string> MusicPlayer::musicFiles{
-        {Music::City_1, "data/musics/city_1.ogg"},
-        {Music::Road_1, "data/musics/road_1.ogg"},
+        {Music::City_1, "../data/musics/city_1.ogg"},
+        {Music::Road_1, "../data/musics/road_1.ogg"},
 };
 
 

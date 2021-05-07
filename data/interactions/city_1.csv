@@ -1,0 +1,17 @@
+Npc (0);NpcID value (1);Interaction Number (2);Interaction Type (3);Interaction Data (4);Interaction Data (5);Actions (6)
+city1_schoolRanger;1;0;DIALOG;Nous sommes enfin arrivé à terre.;;
+city1_schoolRanger;1;1;DIALOG;Je te conseille d'aller voir dès maintenant le professeur.;;
+city1_schoolRanger;1;2;DIALOG;Son laboratoire se trouve à l'Est de la ville.;;SETFIRST:10
+city1_schoolRanger;1;10;DIALOG;J'espère pouvoir bientôt retourner sur l'île.;;
+city1_old_Woman;2;0;DIALOG;Bienvenue dans notre modeste ville !;;
+city1_old_Woman;2;1;DIALOG;Laisse moi soigner tes pokemons.;;
+city1_old_Woman;2;2;HEAL;;;
+city1_old_man;3;0;DIALOG;J'aime bien me reposer ici et regarder la mer.;;
+city1_old_man;3;1;CHOICE;Est-ce que tu suis le cours ?;Oui:10+Non:20+Peut-être ?:30;
+city1_old_man;3;10;DIALOG;Parfait.;;
+city1_old_man;3;11;REACTION;HEART;;
+city1_old_man;3;20;DIALOG;C'est bien dommage.;;
+city1_old_man;3;30;DIALOG;Tu n'as pas du comprendre.;1;
+Trainer test;4;0;DIALOG;Bienvenue dans ce test de combat !;;
+Trainer test;4;1;FIGHT;Envoie tes pokemons !;;
+Trainer test;4;2;DIALOG;Bien joué pour ta victoire !;;SETFIRST:2

@@ -61,7 +61,7 @@ m_activatedZoneChanger(nullptr),
 m_mustLoadZone(false),
 m_stack(stack),
 m_entityLoader(context, this),
-m_zoneDialogLoader("data/entities/zone_dialogs.csv")
+m_zoneDialogLoader("../data/entities/zone_dialogs.csv")
 {
     loadZoneChangerFiles();
 }
@@ -245,7 +245,7 @@ void Zone::loadZone(ZoneID id) {
     
     // Find the Zone name
     string zoneName = fromIDtoFilename(id);
-    string dirPath = "data/zones/" + zoneName + "/"+zoneName+"_";
+    string dirPath = "../data/zones/" + zoneName + "/"+zoneName+"_";
     
     // Load the layers
     m_background = new ZoneLayer(dirPath+"bg.csv", m_texture);
@@ -666,7 +666,7 @@ void Zone::loadZoneChangerFiles() {
     
     // For each file
     for(auto it : zoneFileNames){
-        std::string path = "data/zone_changers/" + it.second + ".csv";
+        std::string path = "../data/zone_changers/" + it.second + ".csv";
         
         // Try to load the file
         Log("Loading " + path, Logger::FILE_INFO);

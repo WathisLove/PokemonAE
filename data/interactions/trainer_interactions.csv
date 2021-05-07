@@ -1,0 +1,15 @@
+Npc ID;Interaction Number;Interaction Type;Interaction Data;Interaction Data 2;Condition
+city1_randomNPC_1;0;DIALOG;Hello there !;;
+city1_randomNPC_1;1;DIALOG;General @charac. 8-);;
+city1_randomNPC_2;0;DIALOG;Je suis le NPC numéro 2 !;;
+city1_randomNPC_3;0;DIALOG;Et moi le Npc numéro 3 !;;
+city1_randomNPC_3;1;DIALOG;Je sais que tu t\’appelles @charac.;;
+city1_randomNPC_3;2;DIALOG;Flippant, hein ?;;
+city1_randomNPC_3;3;REACTION;HEART;;
+city1_randomNPC_3;4;DIALOG;Tiens un bonbon.;;UNIQUE
+city1_randomNPC_3;5;ITEM_GIFT;Potion;3;UNIQUE
+city1_randomNPC_3;6;ITEM_GIFT;CT1;1;UNIQUE
+road1_trainer_1;0;DIALOG;C’est la première fois que je te vois non ?;;UNIQUE
+road1_trainer_1;1;FIGHT;Faisons un combat !;;
+road1_trainer_1;2;DIALOG;Bien joué, je n’aurai jamais pensé que tu puisses gagner;;
+road1_trainer_1;3;BADGE_GIFT;1;;UNIQUE

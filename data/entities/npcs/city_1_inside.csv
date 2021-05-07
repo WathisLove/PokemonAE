@@ -1,0 +1,4 @@
+Npc Name (0);Npc ID (1);Npc Type (2);X (3);Y (4);Direction (5);Texture (6);Mover (7);Conditions (8);Money (9);Sight (10);Pokemons (11);Pokemons Strat (12);Items (13)
+Professeur Chen;4001;NPC;6;5;SOUTH;professor_oak;;;;;;;
+city1_inside_assistantMeuh;3001;NPC;1;7;EAST;scientific_1;;;;;;;
+city1_inside_assistantRight;101;NPC;10;6;WEST;scientific_1;;;;;;;

@@ -1,0 +1,7 @@
+Npc Name (0);Npc ID (1);Npc Type (2);X (3);Y (4);Direction (5);Texture (6);Mover (7);Conditions (8);Money (9);Sight (10);Pokemons (11);Pokemons Strat (12);Items (13)
+city1_schoolRanger;1;NPC;63;28;WEST;ranger_man;SM 3. 1 GU GD;;;;;;
+city1_oldWoman_1;2;NPC;44;22;SOUTH;old_woman_1;ZM 44 22 4 2 0.5;;;;;;
+city1_oldMan_1;3;NPC;42;28;SOUTH;old_man_1;CM LD 2.;MET:2;;;;;
+Dresseur Test;4;TRAINER;59;17;NORTH;teen_boy_1;;;1500;2;pikachu:2+marcacrin:3;x;
+city1_oldMan_2;5;NPC;43;28;NORTH;old_man_1;;DEFEATED:4;;;;;
+city1_seller;6;SELLER;61;34;NORTH;seller;;;;;;;

@@ -1,0 +1,13 @@
+src;Target Zone;dest;Target Direction
+7 10 2 1;city_1;29 19 1 1;SOUTH
+1 27 2 1;city_1;21 24 1 1;SOUTH
+1 45 2 1;city_1;33 5 1 1;SOUTH
+4 64 2 1;city_1;45 14 1 1;SOUTH
+35 8 2 1;city_1;46 29 1 1;SOUTH
+32 27 2 1;city_1;59 13 1 1;SOUTH
+33 45 2 1;city_1;64 11 1 1;SOUTH
+38 39 1 1;city_1_inside;37 59 1 1;WEST
+38 59 1 1;city_1_inside;37 39 1 1;WEST
+63 8 2 1;city_1;70 21 1 1;SOUTH
+64 27 2 1;city_1;73 27 1 1;SOUTH
+64 45 2 1;city_1;85 14 1 1;SOUTH
